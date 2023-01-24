@@ -42,7 +42,6 @@ module Lexer
                     cursor+=1
                     column=1
                     line+=1
-                    puts "newline"
                     next
                 end
 
@@ -279,17 +278,16 @@ module Lexer
                      next
                  end
 
-                error(x,line,cursor)
+                error(x,line,column)
+                return @tokens
                 break
             end
-
-            puts "<DEBUG>"
-            puts @tokens
+            return @tokens
         end
 
 
-        def error(x : Char,line : Int32, cursor : Int32) 
-            puts "Invalid character '" + x + "'"
+        def error(x : Char,line : Int32, column : Int32) 
+            puts "Invalid character '" + x + "' at #{line}:#{column}"
         end
             
     end 

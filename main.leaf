@@ -1,13 +1,36 @@
 x = {};
-x = ();
+y = ["ok", 11, false];
+foreach(a,[]: {
+    a
+})
 
-a = 10
-b = 5
 
-c = (a + b);
-a = 5;
+#AnimalType = "a" | "b" | "c"
 
-d = (a + b) 
+#Dog = Animal({
+    
+})
+
+
+
+if(express, {
+
+})
+
+
+
+Dog {
+    @age: number;
+    @name: string;
+    ageMath: function(boolean) = [multi: Number]:{
+        age * multi
+    }
+}
+
+
+computer = Computer({age: 5, name: "bobby"})
+print(computer.age)
+
 
 root = {
     private = {
@@ -15,10 +38,6 @@ root = {
     }
 }
 
-func = [a:int,b:int,c:int]:{
-
-}
-
-bob = () => {
+addAnimals = [animal:Animal()]:{
 
 }
